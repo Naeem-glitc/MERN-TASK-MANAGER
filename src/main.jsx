@@ -13,8 +13,8 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<App/>}/>
         <Route path='/account-rigistration' element={<RigisterAccount/>}/>
-        <Route path='/dashboard' element={<Dashboard/>}/>
-        <Route path='/developer-dashboard' element={<Developer/>}/>
+        <Route path='/dashboard/:userid' element={<Dashboard/>}/>
+        <Route path='/developer-dashboard/:userid' element={<Developer/>}/>
         <Route path="*" element={<Notfound />} />
       </Routes>
     </BrowserRouter>
